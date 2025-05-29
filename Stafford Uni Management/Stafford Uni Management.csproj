@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0C17AC1-BDE4-42E1-A63A-5DAC11989743}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Stafford_Uni_Management</RootNamespace>
+    <AssemblyName>Stafford Uni Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="AdminDAO.cs" />
+    <Compile Include="Adminfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminfrm.Designer.cs">
+      <DependentUpon>Adminfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommitteDAO.cs" />
+    <Compile Include="Committee.cs" />
+    <Compile Include="Committeefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Committeefrm.Designer.cs">
+      <DependentUpon>Committeefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Com_lec.cs" />
+    <Compile Include="Com_lecDAO.cs" />
+    <Compile Include="Com_lecfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Com_lecfrm.Designer.cs">
+      <DependentUpon>Com_lecfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course.cs" />
+    <Compile Include="CourseDAO.cs" />
+    <Compile Include="Coursefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coursefrm.Designer.cs">
+      <DependentUpon>Coursefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CProgram.cs" />
+    <Compile Include="CProgramDAO.cs" />
+    <Compile Include="CProgramfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CProgramfrm.Designer.cs">
+      <DependentUpon>CProgramfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty.cs" />
+    <Compile Include="FacultyDAO.cs" />
+    <Compile Include="Facultyfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facultyfrm.Designer.cs">
+      <DependentUpon>Facultyfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer.cs" />
+    <Compile Include="LecturerDAO.cs" />
+    <Compile Include="Lecturerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturerfrm.Designer.cs">
+      <DependentUpon>Lecturerfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer_crs.cs" />
+    <Compile Include="Lecturer_crsDAO.cs" />
+    <Compile Include="Lecturer_crsfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer_crsfrm.Designer.cs">
+      <DependentUpon>Lecturer_crsfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs" />
+    <Compile Include="LoginDAO.cs" />
+    <Compile Include="Loginfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginfrm.Designer.cs">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRegfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginRegfrm.Designer.cs">
+      <DependentUpon>LoginRegfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentDAO.cs" />
+    <Compile Include="Studentfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentfrm.Designer.cs">
+      <DependentUpon>Studentfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_lec.cs" />
+    <Compile Include="Student_lecDAO.cs" />
+    <Compile Include="Student_lecfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_lecfrm.Designer.cs">
+      <DependentUpon>Student_lecfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor.cs" />
+    <Compile Include="SupervisorDAO.cs" />
+    <Compile Include="Supervisorfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supervisorfrm.Designer.cs">
+      <DependentUpon>Supervisorfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet33.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet34.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet35.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet36.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet37.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet37.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet38.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet38.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet39.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet39.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet40.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet40.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet42.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet42.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet43.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet43.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet44.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet44.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TithiDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TithiDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Works_on.cs" />
+    <Compile Include="Works_onDAO.cs" />
+    <Compile Include="Works_onfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Works_onfrm.Designer.cs">
+      <DependentUpon>Works_onfrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adminfrm.resx">
+      <DependentUpon>Adminfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Committeefrm.resx">
+      <DependentUpon>Committeefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Com_lecfrm.resx">
+      <DependentUpon>Com_lecfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coursefrm.resx">
+      <DependentUpon>Coursefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CProgramfrm.resx">
+      <DependentUpon>CProgramfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facultyfrm.resx">
+      <DependentUpon>Facultyfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturerfrm.resx">
+      <DependentUpon>Lecturerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturer_crsfrm.resx">
+      <DependentUpon>Lecturer_crsfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginfrm.resx">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginRegfrm.resx">
+      <DependentUpon>LoginRegfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Studentfrm.resx">
+      <DependentUpon>Studentfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_lecfrm.resx">
+      <DependentUpon>Student_lecfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supervisorfrm.resx">
+      <DependentUpon>Supervisorfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Works_onfrm.resx">
+      <DependentUpon>Works_onfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TithiDataSet.xsc">
+      <DependentUpon>TithiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet.xss">
+      <DependentUpon>TithiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet1.xsc">
+      <DependentUpon>TithiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet1.xss">
+      <DependentUpon>TithiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet10.xsc">
+      <DependentUpon>TithiDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet10.xss">
+      <DependentUpon>TithiDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet11.xsc">
+      <DependentUpon>TithiDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet11.xss">
+      <DependentUpon>TithiDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet12.xsc">
+      <DependentUpon>TithiDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet12.xss">
+      <DependentUpon>TithiDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet13.xsc">
+      <DependentUpon>TithiDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet13.xss">
+      <DependentUpon>TithiDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet14.xsc">
+      <DependentUpon>TithiDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet14.xss">
+      <DependentUpon>TithiDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet15.xsc">
+      <DependentUpon>TithiDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet15.xss">
+      <DependentUpon>TithiDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet16.xsc">
+      <DependentUpon>TithiDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet16.xss">
+      <DependentUpon>TithiDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet17.xsc">
+      <DependentUpon>TithiDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet17.xss">
+      <DependentUpon>TithiDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet18.xsc">
+      <DependentUpon>TithiDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet18.xss">
+      <DependentUpon>TithiDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet19.xsc">
+      <DependentUpon>TithiDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet19.xss">
+      <DependentUpon>TithiDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet2.xsc">
+      <DependentUpon>TithiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet2.xss">
+      <DependentUpon>TithiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet20.xsc">
+      <DependentUpon>TithiDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet20.xss">
+      <DependentUpon>TithiDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet21.xsc">
+      <DependentUpon>TithiDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet21.xss">
+      <DependentUpon>TithiDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet22.xsc">
+      <DependentUpon>TithiDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet22.xss">
+      <DependentUpon>TithiDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet23.xsc">
+      <DependentUpon>TithiDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet23.xss">
+      <DependentUpon>TithiDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet24.xsc">
+      <DependentUpon>TithiDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet24.xss">
+      <DependentUpon>TithiDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet25.xsc">
+      <DependentUpon>TithiDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet25.xss">
+      <DependentUpon>TithiDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet26.xsc">
+      <DependentUpon>TithiDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet26.xss">
+      <DependentUpon>TithiDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet27.xsc">
+      <DependentUpon>TithiDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet27.xss">
+      <DependentUpon>TithiDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet28.xsc">
+      <DependentUpon>TithiDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet28.xss">
+      <DependentUpon>TithiDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet29.xsc">
+      <DependentUpon>TithiDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet29.xss">
+      <DependentUpon>TithiDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet3.xsc">
+      <DependentUpon>TithiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet3.xss">
+      <DependentUpon>TithiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet30.xsc">
+      <DependentUpon>TithiDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet30.xss">
+      <DependentUpon>TithiDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet31.xsc">
+      <DependentUpon>TithiDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet31.xss">
+      <DependentUpon>TithiDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet32.xsc">
+      <DependentUpon>TithiDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet32.xss">
+      <DependentUpon>TithiDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet33.xsc">
+      <DependentUpon>TithiDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet33.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet33.xss">
+      <DependentUpon>TithiDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet34.xsc">
+      <DependentUpon>TithiDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet34.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet34.xss">
+      <DependentUpon>TithiDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet35.xsc">
+      <DependentUpon>TithiDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet35.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet35.xss">
+      <DependentUpon>TithiDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet36.xsc">
+      <DependentUpon>TithiDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet36.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet36.xss">
+      <DependentUpon>TithiDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet37.xsc">
+      <DependentUpon>TithiDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet37.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet37.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet37.xss">
+      <DependentUpon>TithiDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet38.xsc">
+      <DependentUpon>TithiDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet38.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet38.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet38.xss">
+      <DependentUpon>TithiDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet39.xsc">
+      <DependentUpon>TithiDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet39.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet39.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet39.xss">
+      <DependentUpon>TithiDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet4.xsc">
+      <DependentUpon>TithiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet4.xss">
+      <DependentUpon>TithiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet40.xsc">
+      <DependentUpon>TithiDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet40.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet40.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet40.xss">
+      <DependentUpon>TithiDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet41.xsc">
+      <DependentUpon>TithiDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet41.xss">
+      <DependentUpon>TithiDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet42.xsc">
+      <DependentUpon>TithiDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet42.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet42.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet42.xss">
+      <DependentUpon>TithiDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet43.xsc">
+      <DependentUpon>TithiDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet43.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet43.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet43.xss">
+      <DependentUpon>TithiDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet44.xsc">
+      <DependentUpon>TithiDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet44.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet44.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet44.xss">
+      <DependentUpon>TithiDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet5.xsc">
+      <DependentUpon>TithiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet5.xss">
+      <DependentUpon>TithiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet6.xsc">
+      <DependentUpon>TithiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet6.xss">
+      <DependentUpon>TithiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet7.xsc">
+      <DependentUpon>TithiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet7.xss">
+      <DependentUpon>TithiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet8.xsc">
+      <DependentUpon>TithiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet8.xss">
+      <DependentUpon>TithiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet9.xsc">
+      <DependentUpon>TithiDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="TithiDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TithiDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TithiDataSet9.xss">
+      <DependentUpon>TithiDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalyst-building-600x240.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GNBYSOATDRD3DD3KXW26DJKDQA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-edit-delete-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uni Interface 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common int.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folders-OS-User-No-Frame-Metro-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folders-OS-User-No-Frame-Metro-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-blue-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office-Customer-Male-Light-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office-Customer-Male-Light-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table-insert-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-edit-delete-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go-back-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin Login int.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

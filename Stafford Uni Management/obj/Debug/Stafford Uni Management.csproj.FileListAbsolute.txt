@@ -1,0 +1,48 @@
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\bin\Debug\Stafford Uni Management.exe.config
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\bin\Debug\Stafford Uni Management.exe
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\bin\Debug\Stafford Uni Management.pdb
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.csprojAssemblyReference.cache
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Properties.Resources.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.csproj.GenerateResource.cache
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.csproj.CoreCompileInputs.cache
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.exe
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.pdb
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Studentfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Facultyfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Lecturerfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Supervisorfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Committeefrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Coursefrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.CProgramfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Com_lecfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Lecturer_crsfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Student_lecfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Works_onfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.MainMenu.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Loginfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.LoginRegfrm.resources
+C:\Users\Tithira\Desktop\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Adminfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\bin\Debug\Stafford Uni Management.exe.config
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\bin\Debug\Stafford Uni Management.exe
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\bin\Debug\Stafford Uni Management.pdb
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.csprojAssemblyReference.cache
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Adminfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Committeefrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Com_lecfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Coursefrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.CProgramfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Facultyfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Lecturerfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Lecturer_crsfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Loginfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.LoginRegfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.MainMenu.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Properties.Resources.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Studentfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Student_lecfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Supervisorfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford_Uni_Management.Works_onfrm.resources
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.csproj.GenerateResource.cache
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.csproj.CoreCompileInputs.cache
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.exe
+D:\Sem 1 Notes\Programming\Stafford Uni Management\Stafford Uni Management\obj\Debug\Stafford Uni Management.pdb
